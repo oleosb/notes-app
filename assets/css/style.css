@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::before,
+*::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+}
+
+html{
+        font-family: 'Roboto', sans-serif;
+}
+
+body{
+        width: 100vw;
+        min-height: 100vh;
+        padding: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 20px;
+}
+
+.add-btn{
+        width: fit-content;
+        height: fit-content;
+        display: inline-flex;
+        font-size: .8em;
+        line-height: 1.4em;
+        background-color: #74BDCB;
+        color: #fff;
+        border: none;
+        padding: .5em 1em;
+        border-radius: .2em;
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        cursor: pointer;
+        transition: transform .2s ease;
+}
+
+.add-btn img{
+        margin: 0 .3em 0 0;
+        height: 1.3em;
+}
+
+.add-btn:active{
+        transform: scale(.98);
+}
+
+.note-container{
+        width: 25em;
+        height: 20em;
+        background-color: #E7F2F8;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: .2em;
+        overflow: hidden;
+}
+
+.header{
+        width: 100%;
+        height: 2em;
+        background-color: #74BDCB;
+        display: inline-flex;
+        justify-content: flex-end;
+}
+
+.header > button{
+        border: none;
+        background-color: transparent;
+        margin: 0 .7em 0 0;
+        cursor: pointer;
+        transition: transform .2s ease;
+}
+
+.header > button:active{
+        transform: scale(.9);
+}
+
+.header > button > img{
+        height: 1.3em;
+}
+
+img{
+        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(104deg) brightness(99%) contrast(110%);
+}
+
+textarea{
+        background-color: transparent;
+        border: none;
+        resize: none;
+        font-size: .95em !important;
+        font-family: 'Roboto', sans-serif;
+}
+
+.note,
+textarea{
+        padding: 1em;
+        width: 100%;
+        height: calc(100% - 2em);
+}
+
+textarea:focus{
+        outline: none;
+}
+
+.note{
+        font-size: 1em;
+        word-wrap: break-word;
+        overflow-y: scroll;
+}
+
+.hidden{
+        display: none;
+}
